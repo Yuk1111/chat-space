@@ -21,7 +21,9 @@
 
 ### Association
 - has_many :groups
-- belongs_to :user
+- has_many :groups_users
+- has_many :messages
+  
 
 ## groupsテーブル
 
@@ -31,8 +33,12 @@
 
 
 ### Association
-- belongs_to:group
 - has_many :users
+- has_many :users
+- has_many :messages
+- has_many :groups_users
+
+
 
 
 ## messageテーブル
@@ -40,7 +46,7 @@
 |------|----|-------|
 |body|text||
 |image|string||
-|uder_id|references|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
 |group_id|references|null: false, foreign_key: true|
 
 ### Association
