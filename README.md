@@ -15,25 +15,24 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false|
+|name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
 
 ### Association
-- has_many :group
-- has_many :user
+- has_many :groups
+- belongs_to :user
 
 ## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|string|null: false|
-|group_name|string|null: false|
+|name|string|null: false|
 
 
 ### Association
-- has_many :group
-- has_many :user
+- belongs_to:group
+- has_many :users
 
 
 ## messageテーブル
