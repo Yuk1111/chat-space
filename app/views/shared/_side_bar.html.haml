@@ -1,0 +1,24 @@
+.left
+  .user__name.clearfix
+    .name
+      = current_user.name
+    
+    .new
+      = link_to new_group_path do
+        = fa_icon 'edit', class: 'icon'
+      = link_to edit_user_path(current_user) do
+        = fa_icon 'cog', class: 'icon'
+
+  .left_box
+    -# - current_user.groups.each do |group|
+    -#   = link_to group_messages_path(group) do
+    .upup
+      .up1
+        name
+      .up2
+        メッセージはまだありません。
+    .upup
+      .up1
+        name
+      .up2
+        メッセージはまだありません。

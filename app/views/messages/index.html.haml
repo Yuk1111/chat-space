@@ -1,31 +1,14 @@
 .flexbox.clearfix
-  .left
-    .user__name
-      .name
-        yuki
-      .setting
-        = fa_icon 'cog', class: "cog"
-      .new
-        = fa_icon 'edit', class: "edit"
-    .left_box
-      .upup
-        Smaple
-      .downdown
-        Sample2
-
-
+  = render partial: "shared/side_bar"
   .right
 
     .chat__title
-      おはよう！
 
       .edit__btn
         Edit
 
     .chat__his
       .his1
-        YUIII
-        2019/08/25(Sun) 14:13:27
         
     .send__text
       .type_text
@@ -34,7 +17,6 @@
           = fa_icon 'image', class: "contents__btn--icon"
        
         
-
       .send
         Send
     
