@@ -96,9 +96,11 @@
       background-color: #38aef0;
       color: white;
       cursor: pointer;
-     float: right;
       text-align: center;
       line-height: 50px;
+      position: absolute;
+      top:0px;
+      right: -100px;
 
     }
   }
@@ -180,5 +182,10 @@
 .new {
   padding-top: 5px;
   display: inline-block;
+  float: right;
+}
+
+.hidden{
+  display: none;
   float: right;
 }
