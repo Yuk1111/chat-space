@@ -10,15 +10,10 @@
         = fa_icon 'cog', class: 'icon'
 
   .left_box
-    -# - current_user.groups.each do |group|
-    -#   = link_to group_messages_path(group) do
-    .upup
-      .up1
-        name
-      .up2
-        メッセージはまだありません。
-    .upup
-      .up1
-        name
-      .up2
-        メッセージはまだありません。
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        .upup
+          .up1
+            = group.name
+          .up2
+            = group.show_last_message

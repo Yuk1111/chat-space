@@ -9,14 +9,13 @@
 
     .chat__his
       .his1
-        
+        = render @messages
     .send__text
       .type_text
-        %input{type: "text", placeholder:"  Type a Message", class: "input"}
-        .image_tag
-          = fa_icon 'image', class: "contents__btn--icon"
-       
-        
-      .send
-        Send
-    
+        = form_for [@group, @message] do |f|
+          = f.text_field :content, class: 'input', placeholder: '  type a message'
+          .image_tag
+            = f.label :image, class: 'form__mask__image' do
+              = fa_icon 'image', class: 'contents__btn--icon'
+              = f.file_field :image, class: 'hidden'
+            = f.submit 'Send', class: 'send'
