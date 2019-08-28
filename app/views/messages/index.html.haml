@@ -13,7 +13,7 @@
     .send__text
       .type_text
         = form_for [@group, @message] do |f|
-          = f.text_field :content, class: 'input', placeholder: 'type a message'
+          = f.text_field :content, class: 'input', placeholder: '  type a message'
           .image_tag
             = f.label :image, class: 'form__mask__image' do
               = fa_icon 'image', class: 'contents__btn--icon'
