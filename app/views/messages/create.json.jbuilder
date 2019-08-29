@@ -1,9 +1,7 @@
-json.id      @message.id
 json.content @message.content 
 json.date    @message.created_at.strftime("%Y/%m/%d %H:%M")
 json.user_name @message.user.name
 json.image   @message.image.url
-
 
 # respond_toで処理を分けたのでjbuilderを使用して返すデータを作成していきます。
 # jbuilderはデフォルトで記述されているgemで入力されたデータをJSON形式で出力します。

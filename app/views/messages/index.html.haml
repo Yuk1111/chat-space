@@ -8,8 +8,7 @@
         Edit
 
     .chat__his
-      .his1
-        = render @messages
+      = render @messages
     .send__text
       .type_text
         = form_for [@group, @message] do |f|
