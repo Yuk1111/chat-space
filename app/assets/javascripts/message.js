@@ -32,7 +32,7 @@ $(document).on('turbolinks:load', function(){
       
       var html = buildHTML(data);
       $('.chat__his').append(html);
-      $('#message_content').val(''); //input内のメッセージを消しています。
+      $('#new_message')[0].reset(); //input内のメッセージを消しています。
       $('.chat__his').animate({ scrollTop: $('.chat__his')[0].scrollHeight});
       return false
 
@@ -49,16 +49,7 @@ $(document).on('turbolinks:load', function(){
 
     })
   });
-
 // done関数の中で変数htmlを定義しappendメソッドを使い作成したHTMLを
 // 追加しています。
-
-  // function scrollBottom(){
-  //   var target = $('.chat__his').last();
-  //   var position = target.offset().top + $('.chat__his').scrollTop();
-  //   $('.chat__his').animate({
-  //     scrollTop: position
-  //   }, 300, 'swing');
-  //   }
 });
 
