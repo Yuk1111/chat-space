@@ -27,7 +27,7 @@
         display: block;
         line-height: 40px;
         padding: 0 20px;
-        margin-top: 30px;
+        margin-top: 10px;
         border: solid 1px #38aef0;
         color: #38aef0;
         position: absolute;
@@ -176,14 +176,17 @@
         background-color: lightblue;
         // float: right;
         text-decoration: none;
-        line-height: 100px;
 
         .up1{
-          padding: 0 30px;
+          padding-top: 30px;
+          padding-left: 20px;
+          font-size: 15px;
           color: white;
         }
         .up2{
-          padding: 0 30px;
+          padding-top: 5px;
+          padding-left:15px;
+          font-size:11px;
           color: white;
         }
       }

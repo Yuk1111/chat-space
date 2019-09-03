@@ -20,6 +20,7 @@ $(document).on('turbolinks:load', function(){
     e.preventDefault();
     var message = new FormData(this);
     var url = (window.location.href);
+    console.log(url)
     $.ajax({  
       url: url,
       type: 'POST',
