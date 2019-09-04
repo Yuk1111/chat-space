@@ -3,9 +3,13 @@
   .right
 
     .chat__title
+      =@group.name
+      
 
+    = link_to edit_group_path(@group) do
       .edit__btn
         Edit
+
 
     .chat__his
       = render @messages

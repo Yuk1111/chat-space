@@ -11,6 +11,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def index
+    @users = User.where('name LIKE(?)', "%#{params[:keyword]}%") and =! cuurent_user    # 検索フォームのキーワードをあいまい検索して、productsテーブルから20件の作品情報を取得する
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   private
 
   def user_params
