@@ -77,7 +77,6 @@ $(document).on('turbolinks:load', function(){
         data: {id: last_message_id}
       })
       .done(function(messages) {
-        console.table(messages)
         var insertHTML = '';
         
         messages.forEach(function(message){
@@ -88,12 +87,15 @@ $(document).on('turbolinks:load', function(){
 
       //メッセージが入ったHTMLを取得
           $('.chat__his').append(html);
+      
 
       //メッセージを追加
-        console.log('success');})
+      ;})
       })
       .fail(function() {
-        console.log('error');
+
+        alert('error');
+
       });
 
       // delay(100).animate({
