@@ -92,11 +92,11 @@ $(document).on('turbolinks:load', function(){
       //メッセージを追加
       ;})
       })
-      .fail(function() {
+      // .fail(function() {
 
-        alert('error');
+      //   alert('error');
 
-      });
+      // });
       $('.chat__his').animate({ scrollTop: $('.chat__his')[0].scrollHeight});
 
 
