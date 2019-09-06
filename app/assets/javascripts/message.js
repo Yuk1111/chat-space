@@ -97,10 +97,8 @@ $(document).on('turbolinks:load', function(){
         alert('error');
 
       });
+      $('.chat__his').animate({ scrollTop: $('.chat__his')[0].scrollHeight});
 
-      // delay(100).animate({
-      //   scrollTop: $(document).height()
-      // },1500);
 
     };
     setInterval(reloadMessages, 5000);
