@@ -3,7 +3,7 @@ $(document).on('turbolinks:load', function(){
     if (message.content || message.image) {
 
     var content = message.content ? `${ message.content }` : "";
-    var img = message.image ? `<img src= ${ message.image }>` : "";
+    var img = message.image ? `<img class="lower-message__image" src= ${ message.image }>` : "";
     var html = `<div class="his1" data-message-id="${message.id}">
                   <div class="his1-up">
                       ${message.user_name}
@@ -14,6 +14,7 @@ $(document).on('turbolinks:load', function(){
                   <div class="his1-down">
                     ${message.content}
                   </div>
+                    ${img}
                 </div>`
       return html;
     };

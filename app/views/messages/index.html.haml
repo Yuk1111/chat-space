@@ -2,8 +2,15 @@
   = render partial: "shared/side_bar"
   .right
 
+
     .chat__title
       =@group.name
+
+      .namebox 
+        Member:
+        - @group.users.each do |user|
+          = user.name
+      
       
       .edit__btn
         = link_to 'Edit', edit_group_path(@group) ,class: "btn"
@@ -15,6 +22,7 @@
 
     .chat__his
       = render @messages
+      
     .send__text
       .type_text
         = form_for [@group, @message] do |f|

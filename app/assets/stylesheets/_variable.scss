@@ -1,6 +1,7 @@
 .flexbox{
   display: block;
   font-family: Hiragino Maru Gothic Pro;
+
   .right {
     width: calc(100vw - 300px);
     height: 100vh;
@@ -17,9 +18,15 @@
       justify-content: space-between;
       border-bottom: solid 1px #eee;
       overflow: scroll;
-
       align-items: center;
-    
+
+        .namebox{
+          font-size: 15px;
+          color:gray;
+          position:absolute;
+          padding-top: 50px;
+        }
+        
       .edit__btn{
         height: 40px;
         width: 80px;
@@ -46,10 +53,17 @@
       background-color: #FAFAFA;
       height: calc(100vh - 190px);
       overflow: scroll;
-
+    
+      .lower-message__image{
+        min-height:50px;
+        max-height: 100px;
+        max-width: 200px;
+      }
 
       .his1{
         min-height:50px;
+        max-height: 100px;
+        max-width: 200px;
         padding: 30px 40px;
           }
         .his1-up{
@@ -186,12 +200,16 @@
           padding-left: 20px;
           font-size: 15px;
           color: white;
+          text-decoration: none;
+
         }
         .up2{
           padding-top: 5px;
           padding-left:15px;
           font-size:11px;
           color: white;
+          text-decoration: none;
+
         }
       }
     }    
