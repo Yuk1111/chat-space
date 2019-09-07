@@ -87,7 +87,8 @@ $(document).on('turbolinks:load', function(){
 
       //メッセージが入ったHTMLを取得
           $('.chat__his').append(html);
-      
+          $('.chat__his').animate({ scrollTop: $('.chat__his')[0].scrollHeight});
+
 
       //メッセージを追加
       ;})
@@ -97,7 +98,6 @@ $(document).on('turbolinks:load', function(){
       //   alert('error');
 
       // });
-      $('.chat__his').animate({ scrollTop: $('.chat__his')[0].scrollHeight});
 
 
     };
