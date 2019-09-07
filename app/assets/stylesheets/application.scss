@@ -5,8 +5,9 @@
 // @import "./mixin";
 // @import "./vendor_prefix";
 // @import "./chat";
-@import "modules/user";
+// @import "./modules/user";
+@import "./user";
 // @import "modules/flash";
 // @import "./messages";
-@import "modules/flash";
-@import "modules/group";
+@import "./modules/flash";
+@import "./modules/group";
