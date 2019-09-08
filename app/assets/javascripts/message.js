@@ -32,14 +32,13 @@ $(document).on('turbolinks:load', function(){
       processData: false,
       contentType: false
     })
+    
     .done(function(data){
-
       var html = buildHTML(data);
       $('.chat__his').append(html);
       $('#new_message')[0].reset(); //input内のメッセージを消しています。
       $('.chat__his').animate({ scrollTop: $('.chat__his')[0].scrollHeight});
-      return false
-
+      // return false
 
       })
 
@@ -77,6 +76,7 @@ $(document).on('turbolinks:load', function(){
         //dataオプションでリクエストに値を含める
         data: {id: last_message_id}
       })
+      
       .done(function(messages) {
         var insertHTML = '';
         
