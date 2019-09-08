@@ -1,6 +1,6 @@
 json.array! @messages do |message|
   json.content message.content
-  json.image lower-message__image.image
+  json.image message.image.url
   json.date message.created_at
   json.created_at message.created_at
   json.user_name message.user.name

@@ -4,4 +4,5 @@ class Message < ApplicationRecord
 
   validates :content, presence: true, unless: :image?
   mount_uploader :image, ImageUploader
+  # メッセージテーブルのイメージカラムをキャリアウェイブの画像保存に使う
 end
