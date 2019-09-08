@@ -1,6 +1,7 @@
 .flexbox{
   display: block;
   font-family: Hiragino Maru Gothic Pro;
+  
 
   .right {
     width: calc(100vw - 300px);
@@ -9,6 +10,7 @@
     background-color: #CC99FF;
 
     .chat__title{
+      
       background-color: #FAFAFA;
       font-size: 20px;
       width: calc(100vw-300px);
@@ -182,7 +184,7 @@
   
     .left_box{
       width: 100%;
-      height: 100%;
+      height: 721px;
 
 
 
